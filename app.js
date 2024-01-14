@@ -25,7 +25,7 @@ app.get('/webcam', (req, res) =>
   <script src='${scriptUrl}'></script>
   <script>
     loadPlayer({
-      url: 'ws://' + location.host + '/api/stream',
+      url: 'wss://' + location.host + '/api/stream',
       canvas: document.getElementById('canvas')
     });
   </script>
